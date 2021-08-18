@@ -1,0 +1,128 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+setup font chữ không chân
+ */
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết 
+ */
+
+/* 1. Vị trí
+2. Kích Thước (rộng , cao ) width , height
+3. Màu Sắc
+4. Kiểu dáng (kiểu chữ, hình tròn, hình vuông,...) */
+
+
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+}
+
+#nav , .subnav {
+    list-style-type: none;
+}
+
+/* 
+setup thẻ Li có id 'nav' nằm Ngang
+ */
+#nav li{
+    position: relative;  /*xét chuẩn góc tọa độ cho phần navigation sổ xuống*/
+}
+
+/* 
+setup thẻ Li có id 'nav' cấp 1
+ */
+#nav > li{
+    display: inline-block;
+}
+
+
+ /*
+---CSS TẤT CẢ THẺ a là con trực tiếp cấp 1 của li và li là con cấp 1 của id 'nav' , 
+cấp 2 sâu bên trong sẽ không bị ảnh hưởng
+ */
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+ /*
+---CSS TẤT CẢ THẺ a là con li và li là con của id 'nav' , cả cấp 1 và cấp sau đều ảnh hưởng
+ */
+#nav li a {
+    text-decoration: none; /*Bỏ gạch dưới của thẻ a */
+    line-height: 46px; /* Canh Giữa khi kéo chuột để copy */
+    padding: 0 24px;
+    display: block; /* Setup kích thước thẻ a cho khớp khi rê chuột qua */
+}
+
+/* ---Khi rê chuột qua sẽ hiện menu lên */
+#nav li:hover .subnav{
+    display: block;
+}
+
+
+ /*
+---hover thẻ li là con của thẻ nav thì thẻ a sẽ được áp dụng
+---Khi rê chuột qua sẽ đổi màu
+ */
+ #nav > li:hover > a,
+ #nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+
+/*
+---Chỉ css cho class 'subnav' là con của id 'nav' 
+*/
+#nav .subnav{
+    display: none;     /*---Không cho hiện tên trên thanh navigation*/
+    position: absolute; /*xét cho phần navigation menu sổ xuống */
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/*
+---Chỉ css cho thẻ a nằm trong class 'subnav' là con của id 'nav' 
+*/
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+
+
+
+#slider{
+
+}
+
+#content{
+
+}
+#footer{
+
+}
