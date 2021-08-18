@@ -8,6 +8,6 @@ GIT commit -m 'luu1'
 
 GIT push origin master
 
-Echo Chao Tam Biet
+Echo Chao Tam Biet Nhe
 
 PAUSE
