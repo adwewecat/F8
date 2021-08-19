@@ -13,6 +13,10 @@ html{
 }
 
 
+.clear{
+    clear: both; /*ÔM trọn DIV con khi dùng  float: left;*/
+}
+
 /* 
 1. Từ ngoài vào trong
 2. Từ trên xuống dưới
@@ -191,7 +195,7 @@ setup toàn thẻ a
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0;
+    padding: 40px 0;
 }
 
 
@@ -221,6 +225,82 @@ setup toàn thẻ a
     text-align: justify; /* Canh đều 2 bên của văn bản  */
     line-height: 1.4; /* chỉnh độ cao dòng của chữ văn bản  */
     
+}
+
+
+#content .members-list{
+    margin-top: 30px;
+    /*ÔM trọn DIV con khi dùng  float: left;*/
+
+}
+
+#content .member-item {
+    float: left; /* Kéo ảnh sang trái*/
+    width: calc(100%/3);
+    text-align: center;
+}
+
+
+#content .member-name {
+    font-size: 15px;
+    padding-bottom: 5px;
+    
+}
+
+#content .member-img {
+    width: 250px;
+    height: 100%;
+    border-radius: 10px; /* Bo tròn góc ảnh image*/
+    
+}
+
+
+
+/* tour-section */
+#content .tour-section{
+    background-color: black;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.ticket-list{
+    margin-top: 35px;
+    background-color: #fff;
+    line-height: 2;
+}
+
+
+.ticket-list li{
+    list-style-type: none; /*Làm Mất cái hình tròn mỗi đầu văn bản */
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px; /*Cách trên dưới 11 , trái phải 16px*/
+    border-bottom: 1px solid #ddd; /*Nét liền bo viền*/
+}
+
+
+.ticket-list .soul-out{
+    background-color: red;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+
+}
+
+.ticket-list .quantity{
+    box-sizing: border-box; /* lÀM Kích thước không bị thay đổi khi làm dầy padding và border */
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 24px; /*Canh giữa Đúng kích thước theo chiều cao và dài*/
+    /* margin-top: -2px; */
+
 }
 
 
