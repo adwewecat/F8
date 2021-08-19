@@ -1,0 +1,122 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #333;
+}
+
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+
+#nav{
+    display: inline-block;
+}
+
+
+
+
+#nav>li>a{
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 20px;
+
+}
+
+/* 
+setup thẻ Li có id 'nav' cấp 1
+ */
+ #nav > li{
+    display: inline-block;
+    position: relative;
+}
+
+
+#nav .subnav{
+    list-style-type: none;
+    display: none;     /*---Không cho hiện tên trên thanh navigation*/
+    position: absolute; /*xét cho phần navigation menu sổ xuống */
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav li a {
+    text-decoration: none; /*Bỏ gạch dưới của thẻ a */
+    line-height: 46px; /* Canh Giữa khi kéo chuột để copy */
+    padding: 0 24px; /* xét cho vùng padding trên dưới =0 và trái phải 24px */
+    display: block; /* Setup kích thước thẻ a cho khớp khi rê chuột qua */
+}
+
+ /*
+---hover thẻ li là con của thẻ nav thì thẻ a sẽ được áp dụng
+---Khi rê chuột qua sẽ đổi màu
+ */
+ #nav > li:hover > a,
+ #nav .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#header .search-icon{
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+
+}
+
+#header #search-btn{
+    display: inline-block;
+    float: right;
+    cursor: pointer; /* Thay Đổi trỏ chuột*/
+}
+
+
+
+#header #search-btn:hover {
+
+    background-color: red;
+
+
+}
+
+
+#logo{
+    display: inline-block;
+}
+
+#logo>h2{
+    color: #fff;
+    line-height: 46px;
+
+}
+
+#logo>h2:hover{
+    background-color: red;
+}

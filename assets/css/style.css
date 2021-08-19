@@ -46,7 +46,7 @@ html{
 
 
 #nav , .subnav {
-    list-style-type: none;
+    list-style-type: none; /*Mất dấu chấm hoặc 1 2 3 ở list dọc*/
 }
 
 /* 
@@ -58,9 +58,11 @@ setup thẻ Li có id 'nav' nằm Ngang
 
 /* 
 setup thẻ Li có id 'nav' cấp 1
+
  */
+ 
 #nav > li{
-    display: inline-block;
+    display: inline-block; /*xét cho Thanh Menu chữ nằm ngang*/
 }
 
 
@@ -70,17 +72,18 @@ cấp 2 sâu bên trong sẽ không bị ảnh hưởng
  */
 #nav > li > a {
     color: #fff;
-    text-transform: uppercase;
+    text-transform: uppercase; /* Viết hoa tất cả chữ văn bản */
 }
 
 
  /*
 ---CSS TẤT CẢ THẺ a là con li và li là con của id 'nav' , cả cấp 1 và cấp sau đều ảnh hưởng
+setup toàn thẻ a
  */
 #nav li a {
     text-decoration: none; /*Bỏ gạch dưới của thẻ a */
     line-height: 46px; /* Canh Giữa khi kéo chuột để copy */
-    padding: 0 24px;
+    padding: 0 24px; /* xét cho vùng padding trên dưới =0 và trái phải 24px */
     display: block; /* Setup kích thước thẻ a cho khớp khi rê chuột qua */
 }
 
