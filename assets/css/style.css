@@ -17,6 +17,22 @@ html{
     clear: both; /*ÔM trọn DIV con khi dùng  float: left;*/
 }
 
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.text-center{
+    text-align: center;
+}
+
 /* 
 1. Từ ngoài vào trong
 2. Từ trên xuống dưới
@@ -305,13 +321,15 @@ setup toàn thẻ a
 
 
 .places-list{
-    margin: 32px -8px 50px;
+    /* margin: 32px -8px 50px; */
+    margin-top: 32px;
+    margin-bottom: 32px;
     
 }
 .place-item{
     float: left;
     width: calc(100%/3);
-    padding: 0 8px;
+    /* padding: 0 8px; */
 }
 .place-img{
     height: 300px;
@@ -460,6 +478,10 @@ setup toàn thẻ a
 }
 .modal-footer a{
     color: #2196F3;
+}
+
+.col-half {
+    width: 50%;
 }
 
 .modal-heading-icon{
