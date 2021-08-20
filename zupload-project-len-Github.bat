@@ -4,7 +4,7 @@ git status
 
 git add -A
 
-GIT commit -m 'luu1'
+GIT commit -m Nguyen-Anh-Dung
 
 GIT push origin master
 
