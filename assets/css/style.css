@@ -304,6 +304,175 @@ setup toàn thẻ a
 }
 
 
+.places-list{
+    margin: 32px -8px 50px;
+    
+}
+.place-item{
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px;
+}
+.place-img{
+    height: 300px;
+    width: 100%; 
+    display: block;
+}
+
+
+.place-img:hover {
+    opacity: 0.6; /*Làm Mờ */
+}
+.place-body{
+    background-color: #fff;
+    list-style: none;
+    font-size: 15px;
+    padding: 0px 14px; /*Cách Lề Đều 2 bên trái phải 14px , trên dưới 0px*/
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 800;
+    
+
+}
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+.place-dec{
+    margin-top: 15px;   
+    line-height: 1.4; 
+    margin-bottom: 15px;
+}
+.place-buy-btn{
+    background-color: #000;
+    color: #fff;
+    padding: 11px 13px;
+    display: inline-block; /*Không để nút bị tràn ra khỏi giao diện*/
+    margin: 5px 0 15px;
+    text-decoration: none;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    padding:11px 13px;
+    cursor: pointer; /* Thay Đổi trỏ chuột*/
+}
+
 #footer{
 
+}
+
+
+
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* display:flex; Nằm giữa display lớn */
+    align-items: center; /*thằng con nằm giữa chiều cao thằng cha*/
+    justify-content: center;/*nằm giữa chiều ngang của thằng cha*/
+    display: none;
+}
+
+
+.js-modal.open{
+    display: flex;
+}
+
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100%-32px);
+    min-height: 300px;
+    position: relative;
+    animation: modalFadeIn ease 0.7s;
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 130px;
+    display:flex; /*Nằm giữa display lớn*/
+    align-items: center; /*thằng con nằm giữa chiều cao thằng cha*/
+    justify-content: center;/*nằm giữa chiều ngang của thằng cha*/
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    cursor: pointer;/* Thay Đổi trỏ chuột*/
+}
+
+.modal-close:hover {
+    opacity: 0.8; /*Làm Mờ khi rê chuột vào*/
+    background-color: salmon;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input{
+    font-size: 15px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 24px;
+}
+
+#by-tickets{
+    background-color: #009688;
+    text-decoration: none;/*Xóa gạch dưới của thẻ a*/
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+
+}
+
+#by-tickets:hover{
+    opacity: 0.9; /*Làm Mờ */
+}
+
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+    
+}
+.modal-footer a{
+    color: #2196F3;
+}
+
+.modal-heading-icon{
+
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
