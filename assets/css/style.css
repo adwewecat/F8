@@ -10,6 +10,7 @@ setup font chữ không chân
  */
 html{
     font-family: Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -29,9 +30,58 @@ html{
     padding-right: 8px;
 }
 
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
 .text-center{
     text-align: center;
 }
+
+/* Kéo sang phải */
+.pull-right{
+    float: right !important;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 11px 13px;
+    display: inline-block; /*Không để nút bị tràn ra khỏi giao diện*/
+    margin: 5px 0 15px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    padding:11px 13px;
+    cursor: pointer; /* Thay Đổi trỏ chuột*/
+}
+
+
+
+
 
 /* 
 1. Từ ngoài vào trong
@@ -211,7 +261,7 @@ setup toàn thẻ a
     width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 0;
+    padding: 40px 0 112px;
 }
 
 
@@ -323,7 +373,7 @@ setup toàn thẻ a
 .places-list{
     /* margin: 32px -8px 50px; */
     margin-top: 32px;
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
     
 }
 .place-item{
@@ -480,13 +530,89 @@ setup toàn thẻ a
     color: #2196F3;
 }
 
-.col-half {
-    width: 50%;
+
+.contact-content{
+    margin-top: 48px;
 }
 
-.modal-heading-icon{
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
 
 }
+
+
+/* CSS cho tất cả các thẻ có chữ ti- */
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+    outline: none; /* bỏ màu mỗi lần bấm vào input*/
+}
+
+
+
+/* Map-section */
+.map-section{
+    width: 100%; /*Nếu Kéo Màn hình thì ảnh cũng sẽ nhỏ lại theo, không bị mất ảnh*/
+}
+
+
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+
+}
+
+
+#footer .sosials-list{
+    font-size: 24px;
+
+}
+
+
+#footer .sosials-list a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#footer .sosials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#footer .copyright a{
+    color: rgb(11, 69, 241);
+}
+
+
+#footer .copyright a:hover{
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
 
 @keyframes modalFadeIn {
     from {

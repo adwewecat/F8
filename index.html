@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>Sói</title>
     <!-- Required meta tags1 -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
 
@@ -19,17 +20,17 @@
             <!-- Start Navigation -->
             <ul id="nav">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Brand</a></li>
-                <li><a href="#">Tour</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#band">Brand</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -59,8 +60,8 @@
 
         <div id="content">
 
-            <!-- About Section -->
-            <div class="content-section">
+            <!-- Begin About Section -->
+            <div id="band" class="content-section">
                 <h2 class="section-heading">The Band</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="abount-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
@@ -92,12 +93,12 @@
                 </div>
 
             </div>
+            <!-- End About Section -->
 
 
 
-            <!-- Tour Section -->
-
-            <div class="tour-section">
+            <!--Begin Tour Section -->
+            <div id="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white">emember to book your tickets!</p>
@@ -114,7 +115,7 @@
                                 <h3 class="place-heading">Pé Kem</h3>
                                 <p class="place-time">Fri 27 Nov 2021</p>
                                 <p class="place-dec">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">By Tickets</button>
+                                <button class="place-buy-btn js-buy-ticket btn">By Tickets</button>
                             </div>
                         </div>
                         <div class="col place-item">
@@ -123,7 +124,7 @@
                                 <h3 class="place-heading">Vân Anh</h3>
                                 <p class="place-time">Fri 27 Nov 2021</p>
                                 <p class="place-dec">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">By Tickets</button>
+                                <button class="place-buy-btn js-buy-ticket btn">By Tickets</button>
                             </div>
                         </div>
                         <div class="col place-item">
@@ -132,7 +133,7 @@
                                 <h3 class="place-heading">Vân Anh Xinh Đẹp</h3>
                                 <p class="place-time">Fri 27 Nov 2021</p>
                                 <p class="place-dec">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button class="place-buy-btn js-buy-ticket">By Tickets</button>
+                                <button class="place-buy-btn js-buy-ticket btn">By Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -141,6 +142,7 @@
 
                 </div>
             </div>
+            <!--END Tour Section -->
 
 
 
@@ -148,25 +150,71 @@
 
 
 
-            <!-- Contact Section -->
-            <div class="content-section">
+            <!--Begin Contact Section -->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sub-heading">Fan? Drop a note!</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Chicago, US</p>
+                        <p><i class="ti-mobile"></i>Phone: 0000</p>
+                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    </div>
+                    <div class="col col-half">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half contact-form">
+                                    <input type="text" name="" id="" placeholder="Name" class="form-control" required>
+                                </div>
+                                <div class="col col-half contact-form">
+                                    <input type="email" name="" id="" placeholder="Email" class="form-control" required>
+                                </div>
+                                <!-- <div class="clear"></div> -->
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full contact-form">
+                                    <input type="text" name="" id="" placeholder="Message" class="form-control" required>
+                                </div>
+                                <!-- <div class="clear"></div> -->
+                            </div>
+                            
+                            <input class="pull-right mt-16 btn" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+
+
+
             </div>
-
+            <!--End Contact Section -->
+            <img src="./assets/img/footer/map.jpg" alt="" class="map-section">
 
         </div>
 
 
 
-
-
-
-
+            <!--Begin footer Section -->
         <div id="footer">
-
+            <div class="sosials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.facebook.com/anhdung287/"> Sói </a></p>
         </div>
+            <!--END footer Section -->
+
     </div>
+
+
+
+
+
+
 
     <!-- Modal -->
     <div class="modal js-modal">
@@ -201,7 +249,7 @@
             </div>
 
             <footer class="modal-footer">
-                <p class="modal-help">Need <a href="">Help?</a></p>
+                <p class="modal-help">Need <a href="https://www.facebook.com/anhdung287/">Help?</a></p>
             </footer>
         </div>
     </div>
@@ -214,24 +262,24 @@
         const modalClose = document.querySelector('.js-modal-close')
         const modalContainer = document.querySelector('.js-modal-container')
 
-        function showByTickets(){
+        function showByTickets() {
             modal.classList.add('open')
         }
 
-        function hideByTickets(){
+        function hideByTickets() {
             modal.classList.remove('open')
         }
-        
-        for(const buyBtn of buyBtns){
-            buyBtn.addEventListener('click',showByTickets)
+
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showByTickets)
         }
 
         modalClose.addEventListener('click', hideByTickets)
         modal.addEventListener('click', hideByTickets)
-        modalContainer.addEventListener('click', function(event){
+        modalContainer.addEventListener('click', function (event) {
             event.stopPropagation()
         })
-   
+
     </script>
 
 </body>
