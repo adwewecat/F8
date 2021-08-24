@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #333;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+/* Article */
+h1 {
+    line-height: 2rem;
+}
+
+article {
+    padding: 0 16px;
+    line-height: 1.6rem;
+}
+
+article img {
+    width: 640px;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+}
+
+
+
+/* Mobile Nav */
+
+.nav__bars-btn {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: none;
+    margin-left: 8px;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    animation: fadeIn linear 0.2s;
+
+}
+
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width:320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s , opacity linear 0.2s;
+}
+
+.nav__mobile-list {
+    margin-top: 45px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.4rem;
+    list-style-type: none;
+    line-height: 2.0;
+    padding: 0 10px 0 10px;
+
+}
+
+
+.nav__mobile-list li{
+    display: block;
+    background-color: #ccc;
+    
+}
+
+
+.nav__mobile-list .nav__mobile-link {
+    display: block;
+    width: 100%;
+    /* background-color: #ccc; */
+    /* margin-left: -10px;
+    margin-top: 10px; */
+    text-decoration: none;
+    line-height: 44px;
+    /* padding: 0; */
+    border: 1px solid red;
+    
+    
+}
+
+
+
+.nav__mobile-close {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.nav__input:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__input{
+    display: none;
+}
+
+
+/* Hiện màn hình nav bar khi check vào */
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+
+
+/* Thiết lập cho Mobile và tablet với màn hình < 1024px */
+@media screen and (max-width: 63.9375em){
+    .nav__bars-btn {
+        display: block;
+        float: right;
+    }
+
+    .nav__pc{
+        display: none;
+        
+    }
+
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
